@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center style="background-color:rgb(128, 128, 128,0.4);width:40%;
+    margin:auto;padding:10px; ">
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        RecipeName:<input type="text" name="recipename" required/><br><br>
+        RecipeDesc:<input type="text" name="recipedesc" required/><br><br>
+        Upload Image: <input type="file" name="image"/><br><br>
+        <input type="submit" value="AddRecipe" />
+    </form>
+    </center>
+</body>
+</html>
